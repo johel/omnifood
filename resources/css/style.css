@@ -205,3 +205,52 @@ section{
     border: 1px solid #cf6d17;
     color: #fff;
 }
+
+/*-----------------------------------------------------------------------------*/
+/* FEATURES */
+/*-----------------------------------------------------------------------------*/
+
+.features .long-copy{
+    margin-bottom: 30px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* MEALS */
+/*-----------------------------------------------------------------------------*/
+
+.section-meals{
+    width:100%;
+    padding:0;
+}
+
+.meals-showcase{
+    width:100%;
+    list-style: none;
+}
+
+.meals-showcase li{
+    display: block;
+    width:25%;
+    float:left;
+    margin-top:-4px;
+}
+
+.meals-photo{
+    width:100%;
+    margin:0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meals-photo img{
+    width:100%;
+    height:auto;
+    transform:scale(1.15);
+    transition:transform 0.5s, opacity 0.5s;
+    opacity:0.7;
+}
+
+.meals-photo img:hover{
+    transform:scale(1);
+    opacity:1;
+}
