@@ -46,6 +46,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -104,6 +105,7 @@ header{
     padding:1%;
 }
 
+
 h1,h2,h3{
     font-weight:300;
     letter-spacing: 1px;
@@ -145,6 +147,11 @@ section{
     padding: 80px 0;
 }
 
+/
+
+/* ICONS */
+
+
 .icon-big{
 /*
     text-align: center;
@@ -156,6 +163,22 @@ section{
     color:#e67e22;
     text-align:center;
 }
+
+.icon-small{
+    display:inline-block;
+    color:#e67e22;
+    margin-right:10px;
+    width:30px;
+    text-align: center;
+    font-size:120%;
+    
+    /* Secrets to align text and icons*/
+    line-height:120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    
+}
+
 /* PARAGRAPHS */
 
 .long-copy{
@@ -170,6 +193,24 @@ section{
     line-height: 145%;
     text-align:justify;
 }
+
+/* LINKS */
+
+a:link,
+a:visited{
+    color:#e67e22;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    text-decoration: none;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color:#555;
+    border-bottom: 1px solid transparent;
+}
+
 
 /*-------- */
 
@@ -313,38 +354,77 @@ section{
     margin-right: 30px;
 }
 
+.btn-app{
+    border:0;
+}
+
 .btn-app img{
     height:50px;
     width:auto;
 }
 
-/*
 
-.app-screen{
-    height: 400px;
-    width: auto;
-    margin: 0 auto;
-    display: block;
+/*-----------------------------------------------------------------------------*/
+/* CITIES */
+/*-----------------------------------------------------------------------------*/
+
+.section-cities{
+    
 }
 
-.works-step{
-
+.city-features{
+/*    text-align: center;*/
+    margin-bottom:5px;
 }
 
-.works-step div{
-    background-color: #e67e22;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
+.box img{
+    width:100%;
+    height:auto;
+    margin-bottom: 15px;
+}
+
+.box h3{
+    text-align: left;
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* TESTIMONIALS */
+/*-----------------------------------------------------------------------------*/
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color:#fff;
+    background-attachment: fixed; 
+}
+
+blockquote{
+    font-style: italic;
+    line-height: 145%;
+    padding:2%;
+    position:relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content:"\201C";
+    font-size: 500%;
+    display:block;
+    position:absolute;
+    top:-5px;
+    left:-5px;
+}
+
+cite{
+    margin-top:20px;
+    display:block;
+    font-size: 90%;
+}
+
+cite img{
+    height:45px;
+    border-radius: 50%;
     vertical-align: middle;
-    text-height:40px;
+    margin-right:10px;
 }
-
-.works-step div span{
-    vertical-align: middle;
-}
-
-*/
