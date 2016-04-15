@@ -354,8 +354,8 @@ a:active{
     margin-right: 30px;
 }
 
-.btn-app{
-    border:0;
+.btn-app:link, .btn-app:visited{
+    border-bottom:1px solid transparent;
 }
 
 .btn-app img{
@@ -427,4 +427,62 @@ cite img{
     border-radius: 50%;
     vertical-align: middle;
     margin-right:10px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* PLANS */
+/*-----------------------------------------------------------------------------*/
+
+.section-plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    background-color:#fff;
+    border-radius:5px;
+    width:90%;
+    margin-left:5%;
+    box-shadow: 0px 2px 2px #de9000;
+}
+
+.plan-box div{
+    padding:15px;
+    border: 1px solid #efefef;
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding:5px 0;
+    
+}
+
+.plan-price{
+    font-size:300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color:#e67e22;
+}
+
+.plan-price span{
+    font-size:30%;
+    font-weight:300;
+    
+}
+
+.plan-price-meal{
+    font-size:80%;
 }
