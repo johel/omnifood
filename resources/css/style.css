@@ -67,6 +67,14 @@ header{
     width:auto;
 }
 
+.logo-black{
+    float:left;
+    height:50px;
+    width:auto;
+    margin: 5px 0;
+    display:none;
+}
+
 .main-nav{
     float:right;
     list-style: none;
@@ -94,6 +102,39 @@ header{
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22
 }
+
+/* Sticky navi */
+
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #efefef;
+    z-index:999;
+}
+
+.sticky .logo{
+    display:none;
+}
+
+.sticky .logo-black{
+    display:block;
+}
+
+.sticky .main-nav{
+    margin-top: 19px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color:#555;
+    font-size:15px;
+    padding: 16px 0;
+}
+
+
 
 /*-----------------------------------------------------------------------------*/
 /* REUSABLE COMPONENTS */
@@ -610,5 +651,29 @@ footer p{
 }
 .ion-social-instagram:hover{
     color:#517fa4;
+}
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
 
